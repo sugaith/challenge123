@@ -6,7 +6,7 @@ import {performOperation} from './Services'
 function App() {
   const [result, setResult] = useState([])
 
-  const inputArray = [1, 2, 3, 5, 6, 8, 9];
+  const inputArray = ['1', 2, 3, 5, 6, 8, 9, 'thiago'];
 
   useEffect(() => {
     const resultArray = performOperation(inputArray)
@@ -22,14 +22,6 @@ function App() {
         <p data-testid={'resultField'}>
           {result.join(', ')}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
